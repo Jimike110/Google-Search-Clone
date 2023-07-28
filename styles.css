@@ -1,0 +1,328 @@
+/* TABLE OF CONTENTS (LOL)
+1. STYLING APPLIED TO ALL PAGES
+2. STYLING SPECIFIC TO INDEX.HTML ONLY
+3. STYLING SPECIFIC TO IMAGE_SEARCH.HTML ONLY
+4. STYLING SPECIFIC TO ADVANCED_SEARCH.HTML ONLY
+5. STYLING APPLIED TO INDEX.HTML AND ADVANCED_SEARCH.HTML ONLY
+HAPPY SURFING :) !
+*/
+
+/* 1. STYLING APPLIED TO ALL PAGES */
+:root {
+    --btn-bg-color: #f8f9fa;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-size: 2em;
+    font-family: sans-serif;
+  }
+  
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .button {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--btn-bg-color);
+    border: none;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: var(--btn-bg-color);
+    border: 1px solid #dadce0;
+    color: #202124;
+  }
+  
+  #right {
+    position: absolute;
+    right: 2vw;
+    top: 2vh;
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    background: #f2f2f2;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  footer > div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  footer > div > a {
+    margin: 10px;
+    color: #595a5a;
+    font-size: 0.7em;
+  }
+  
+  footer > div > a:hover {
+    text-decoration: underline;
+  }
+  /* END OF STYLING APPLIED TO ALL PAGES */
+  
+  
+  /* 2. STYLING SPECIFIC TO INDEX.HTML ONLY */
+  .footer-link-group-2 {
+    justify-content: center;
+    align-items: center;
+    min-width: 30%;
+    order: 2;
+  }
+  
+  .footer-link-group-2 img {
+    max-height: 20px;
+    width: auto;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .footer-link-group-2 {
+      order: 0;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  /* END OF STYLING SPECIFIC TO INDEX.HTML ONLY */
+  
+  
+  /* 3. STYLING SPECIFIC TO IMAGE_SEARCH.HTML ONLY */
+  #google-image-logo {
+    position: relative;
+  }
+  
+  #google-image-logo > img {
+    max-width: 300px !important;
+    margin-bottom: 5vh;
+    margin-top: -10vh;
+    width: 50vw;
+    max-width: 400px;
+  }
+  
+  #google-image-logo > p {
+    position: absolute;
+    bottom: 20px;
+    right: 1vw;
+    color: #4285f4;
+    font-size: 3vw;
+    font-weight: 200;
+  }
+  
+  @media screen and (min-width: 600px) {
+    #google-image-logo > p {
+      font-size: 16px;
+      bottom: 20px;
+      right: 10px;
+    }
+  }
+  /* END OF STYLING SPECIFIC TO IMAGE_SEARCH.HTML ONLY */
+  
+  
+  /* 4. STYLING SPECIFIC TO ADVANCED_SEARCH.HTML ONLY */
+  /* "as" is short for advanced search */
+  #as-body {
+    height: 100%;
+  }
+  
+  #left > img {
+    position: absolute;
+    top: 3vh;
+    left: 1.5vw;
+    max-height: 25px;
+    width: auto;
+  }
+  
+  #heading {
+    margin-top: 14vh;
+    padding-left: 3vw;
+    padding-bottom: 3vh;
+    color: #d93025;
+    font-size: 20px;
+    border-bottom: 1px solid #ebebeb;
+  }
+  
+  #as-form {
+    margin-left: 4vw;
+    margin-top: 4vh;
+  }
+  
+  #as-form p {
+    font-size: 16px;
+    display: inline-block;
+    min-width: 167px;
+    width: 16%;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  #as-form label,
+  #as-form .help {
+    display: inline-block;
+    min-width: 167px;
+    width: 16%;
+    height: 35px;
+    color: #222;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  
+  #as-form .help {
+    width: 30%;
+    height: 30px;
+    color: #555;
+    padding-left: 10px;
+    line-height: 12px;
+    font-size: 11px;
+    vertical-align: middle;
+  }
+  
+  #as-form input {
+    display: inline-block;
+    min-width: 167px;
+    vertical-align: middle;
+    width: 45%;
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    font-size: 13px;
+    height: 30px;
+    padding: 1px 8px;
+  }
+  
+  #as-form input:focus {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    border: 1px solid #4d90fe;
+    outline: none;
+  }
+  
+  #whitespace {
+    display: inline-block;
+    min-width: 167px;
+    width: 45%;
+  }
+  
+  #whitespace + p {
+    font-weight: 600;
+    color: #777;
+    font-size: 13px;
+  }
+  
+  .as-button-div {
+    display: inline-block;
+    width: 45%;
+    margin-top: 20px;
+  }
+  
+  #as-form-submit {
+    float: right;
+    line-height: 100%;
+    height: 30px;
+    min-width: 120px;
+    background-color: #4d90fe;
+    border: 1px solid #3079ed;
+    color: #fff;
+    border-radius: 2px;
+    cursor: default;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #as-footer {
+    justify-content: flex-start;
+  }
+  
+  @media screen and (max-width: 750px) {
+    #as-form .help,
+    #whitespace + p {
+      display: none;
+    }
+    #as-form input,
+    .as-button-div {
+      width: 60%;
+    }
+  }
+  /* END OF STYLING SPECIFIC TO ADVANCED_SEARCH.HTML ONLY */
+  
+  
+  /* 5. STYLING APPLIED TO BOTH INDEX.HTML AND IMAGE_SEARCH.HTML ONLY */
+  #search-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  #search-form > img {
+    margin-bottom: 5vh;
+    margin-top: -10vh;
+    width: 50vw;
+    max-width: 400px;
+  }
+  
+  #search-bar {
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    width: 70%;
+    max-width: 584px;
+    height: 44px;
+    outline: none;
+    font-size: 1em;
+    padding: 0 20px 0 20px;
+  }
+  
+  #search-bar:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+  }
+  
+  #search-buttons {
+    margin-top: 4vh;
+  }
+  
+  .footer-link-group-1 {
+    justify-content: flex-start;
+    min-width: 30%;
+    order: 1;
+  }
+  
+  .footer-link-group-3 {
+    justify-content: flex-end;
+    min-width: 30%;
+    order: 3;
+  }
+  /* END OF STYLING APPLIED TO BOTH INDEX.HTML AND IMAGE_SEARCH.HTML ONLY */
