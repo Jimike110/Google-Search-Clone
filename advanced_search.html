@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image">
+  <title>Advanced Search</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png">
+</head>
+<body id="as-body">
+  <!-- Navigation Bar -->
+  <nav id="as-nav">
+    <span id="left">
+      <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google">
+    </span>
+    <span id="right">
+      <a href="image_search.html" class="button">Image Search</a>
+      <a href="index.html" class="button">Google Search</a>
+    </span>
+  </nav>
+
+  <!-- Advanced Search Form -->
+  <header id="heading">Advanced Search</header>
+  <form id="as-form" action="https://google.com/search">
+    <div>
+      <p>Find pages with...</p>
+      <div id="whitespace"></div>
+      <p>To do this in the search box.</p>
+    </div>
+    <div>
+      <label for="all">all these words:</label>
+      <input id="all" type="text" name="as_q">
+      <p class="help">Type the important words: tri-color rat terrier</p>
+    </div>
+    <div>
+      <label for="exact">this exact word or phrase:</label>
+      <input id="exact" type="text" name="as_epq">
+      <p class="help">Put exact words in quotes: "rat terrier"</p>
+    </div>
+    <div>
+      <label for="any">any of these words:</label>
+      <input id="any" type="text" name="as_oq">
+      <p class="help">Type OR between all the words you want: miniature OR standard</p>
+    </div>
+    <div>
+      <label for="none">none of these words:</label>
+      <input id="none" type="text" name="as_eq">
+      <p class="help">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</p>
+    </div>
+    <div>
+      <label></label>
+      <div class="as-button-div">
+        <button type="submit" id="as-form-submit">Advanced Search</button>
+      </div>
+    </div>
+  </form>
+
+  <!-- Footer -->
+  <footer id="as-footer">
+    <div>
+      <a href="https://support.google.com/websearch/" target="_blank">Help</a>
+      <a href="https://policies.google.com/privacy/" target="_blank">Privacy</a>
+      <a href="https://policies.google.com/terms" target="_blank">Terms</a>
+    </div>
+  </footer>
+</body>
+</html>
